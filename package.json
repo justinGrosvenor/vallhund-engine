@@ -1,0 +1,29 @@
+{
+  "name": "@vallhund/engine",
+  "version": "0.1.0",
+  "description": "The open detection and remediation core behind Vallhund — turns normalized telemetry into findings, actor classification, coverage boundaries, and agent-ready remediation prompts.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc",
+    "lint": "eslint .",
+    "example:basic": "node examples/basic-eval.ts",
+    "example:cloudflare": "node examples/cloudflare-json.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.0.0",
+    "eslint": "^10.4.1",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.60.1",
+    "vitest": "^3.0.0"
+  }
+}
