@@ -1,3 +1,17 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/vallhund-lockup-mono-bone.svg">
+    <img src=".github/assets/vallhund-lockup-mono-charcoal.svg" alt="Vallhund" width="220">
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@vallhund/engine"><img alt="npm" src="https://img.shields.io/npm/v/%40vallhund%2Fengine"></a>
+  <a href="https://github.com/justinGrosvenor/vallhund-engine/actions/workflows/ci.yml"><img alt="ci" src="https://github.com/justinGrosvenor/vallhund-engine/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-AGPL--3.0-2fb6a4"></a>
+  <img alt="node" src="https://img.shields.io/node/v/%40vallhund%2Fengine?color=2fb6a4">
+</p>
+
 # Vallhund Engine
 
 Vallhund Engine is the open detection and remediation core behind [Vallhund](https://vallhund.org).
