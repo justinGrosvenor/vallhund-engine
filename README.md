@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/vallhund-lockup-mono-bone.svg">
-    <img src=".github/assets/vallhund-lockup-mono-charcoal.svg" alt="Vallhund" width="220">
-  </picture>
+  <img src=".github/assets/vallhund-lockup.svg" alt="Vallhund" width="260">
 </p>
 
 <p align="center">
