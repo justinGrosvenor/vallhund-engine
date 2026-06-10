@@ -26,7 +26,13 @@ jobs, retention, notifications, team workflow, and hosted triage.
 
 ## Quick start
 
-Requires Node >= 22.6 (the repo runs TypeScript directly via type stripping).
+Use it as a package:
+
+```bash
+npm install @vallhund/engine
+```
+
+Or run it from source (Node >= 22.6; the repo runs TypeScript directly via type stripping):
 
 ```bash
 npm install
