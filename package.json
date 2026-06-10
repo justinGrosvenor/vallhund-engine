@@ -4,16 +4,44 @@
   "description": "The open detection and remediation core behind Vallhund — turns normalized telemetry into findings, actor classification, coverage boundaries, and agent-ready remediation prompts.",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "private": true,
+  "homepage": "https://vallhund.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinGrosvenor/vallhund-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justinGrosvenor/vallhund-engine/issues"
+  },
+  "keywords": [
+    "security",
+    "detection",
+    "bot-detection",
+    "ai-agents",
+    "traffic-analysis",
+    "watchdog"
+  ],
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "typecheck": "tsc",
     "lint": "eslint .",
     "example:basic": "node examples/basic-eval.ts",
-    "example:cloudflare": "node examples/cloudflare-json.ts"
+    "example:cloudflare": "node examples/cloudflare-json.ts",
+    "prepublishOnly": "npm test && npm run lint && npm run build"
   },
   "engines": {
     "node": ">=22.6"
